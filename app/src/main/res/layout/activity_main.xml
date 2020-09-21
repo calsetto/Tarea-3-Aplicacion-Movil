@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="244dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/blanco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFEFE" />
+
+        <Button
+            android:id="@+id/gris"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#BBB9B9" />
+
+        <Button
+            android:id="@+id/gris_oscuro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#747373" />
+
+        <Button
+            android:id="@+id/negro_claro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#333333" />
+
+        <Button
+            android:id="@+id/negro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="185dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:ems="10"
+                android:hint="Ingrese el monto"
+                android:inputType="number"
+                android:textColor="#2196F3"
+                android:textColorHighlight="#2196F3"
+                android:textColorHint="#2196F3"
+                android:textColorLink="#2196F3"
+                android:textCursorDrawable="@android:color/holo_blue_light"
+                android:textSize="24sp"
+                android:textStyle="normal" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:stretchColumns="0,1,2,3,4">
+
+                <TableRow>
+
+                    <ImageView
+                        android:layout_width="33dp"
+                        android:layout_height="27dp"
+                        android:layout_marginBottom="3dp"
+                        app:srcCompat="@mipmap/bitcoin" />
+
+                    <ImageView
+                        android:layout_width="33dp"
+                        android:layout_height="27dp"
+                        app:srcCompat="@mipmap/bitcoin" />
+
+                    <ImageView
+                        android:layout_width="33dp"
+                        android:layout_height="27dp"
+                        app:srcCompat="@mipmap/bitcoin" />
+
+                    <ImageView
+                        android:layout_width="33dp"
+                        android:layout_height="27dp"
+                        app:srcCompat="@mipmap/bitcoin" />
+
+                    <ImageView
+                        android:layout_width="33dp"
+                        android:layout_height="27dp"
+                        app:srcCompat="@mipmap/bitcoin" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:padding="3dip"
+                        android:text="100"
+                        android:textAlignment="center"
+                        android:textColor="#2196F3" />
+
+                    <TextView
+                        android:padding="3dip"
+                        android:text="50"
+                        android:textAlignment="center"
+                        android:textColor="#2196F3" />
+
+                    <TextView
+                        android:padding="3dip"
+                        android:text="20"
+                        android:textAlignment="center"
+                        android:textColor="#2196F3" />
+
+                    <TextView
+                        android:padding="3dip"
+                        android:text="10"
+                        android:textAlignment="center"
+                        android:textColor="#2196F3" />
+
+                    <TextView
+                        android:padding="3dip"
+                        android:text="5"
+                        android:textAlignment="center"
+                        android:textColor="#2196F3" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/coin100"
+                        android:padding="3dip"
+                        android:text="4"
+                        android:textAlignment="center"
+                        android:textColor="#FF9800" />
+
+                    <TextView
+                        android:id="@+id/coin50"
+                        android:padding="3dip"
+                        android:text="5"
+                        android:textAlignment="center"
+                        android:textColor="#FF9800" />
+
+                    <TextView
+                        android:id="@+id/coin20"
+                        android:padding="3dip"
+                        android:text="6"
+                        android:textAlignment="center"
+                        android:textColor="#FF9800" />
+
+                    <TextView
+                        android:id="@+id/coin10"
+                        android:padding="3dip"
+                        android:text="2"
+                        android:textAlignment="center"
+                        android:textColor="#FF9800" />
+
+                    <TextView
+                        android:id="@+id/coin5"
+                        android:padding="3dip"
+                        android:text="3"
+                        android:textAlignment="center"
+                        android:textColor="#FF9800" />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:background="#00BCD4"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Swipe Right para salir"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:background="#4CAF50"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Swipe Left para borrar"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
